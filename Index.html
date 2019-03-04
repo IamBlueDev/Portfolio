@@ -26,9 +26,34 @@
 
         <!--SideBar-->
         <div id="sidebar-wrapper">
-
+            <div id="sidebar-logo">
+                <h1> T B </h1>
+            </div>
             <ul class="sidebar-nav">
-                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <p></p>
+                <li>
+                    <a href="Projects.html">
+                        <i class="fas fa-project-diagram"></i> Projects
+                    </a>
+                </li>
+                <p></p>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+                </li>
+                <p></p>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-address-book"></i> Contact
+                    </a>
+                </li>
+                <p></p>
             </ul>
         </div>
 
@@ -38,10 +63,13 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lq-12">
-                        <a href="#" class="btn btn-success" id="menu-toggle">hm</a>
+                        <!-- <a href="#" class="btn btn-success" id="menu-toggle">hm</a> -->
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fas fa-align-left"></i>
+                                
+                            </button>
                         <h1>Welcome</h1>
                         <p>
-
                         </p>
                     </div>
                 </div>
@@ -52,9 +80,15 @@
 
     <!-- Script to colapse menu -->
     <script>
-        $('#menu-toggle').click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
+        /*$('#menu-toggle').click(function(e) {
+                                                                                                                                                            e.preventDefault();
+                                                                                                                                                            $("#wrapper").toggleClass("toggled");
+                                                                                                                                                        });*/
+
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#wrapper').toggleClass('toggled');
+            });
         });
     </script>
 </body>
