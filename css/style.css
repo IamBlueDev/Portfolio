@@ -3,7 +3,7 @@
 #sidebar-wrapper {
     z-index: 1;
     position: absolute;
-    background-color: #2B3A75;
+    background: #1C2856;
     widows: 0;
     height: 100%;
     overflow-y: hidden;
@@ -22,6 +22,19 @@
     -webkit-text-stroke-color: white;
 }
 
+#sidebar-logo-home {
+    background: black;
+    list-style: none;
+    position: absolute;
+    right: 5px;
+    top: 13.5%;
+}
+
+#sidebar-content {
+    background: #2B3A75;
+    height: 35%;
+}
+
 #sidebar-wrapper li {
     overflow: hidden;
     background: #1C2856;
@@ -31,29 +44,11 @@
     background: red;
 }
 
-
-/* Main Content*/
-
-#main-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding-left: 11.5%;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #303640;
-}
-
-
-/* Show the Sidebar */
-
-#wrapper.toggled #sidebar-wrapper {
-    width: 10%;
-}
-
-#wrapper.toggled #main-content-wrapper {
-    padding-left: 11.5%;
+#sidebar-bottombar {
+    color: lightgray;
+    opacity: 0.1;
+    text-align: center;
+    padding-top: 5%;
 }
 
 .sidebar-nav {
@@ -78,6 +73,70 @@ body {
 }
 
 .sidebar-nav li a:hover {
-    background: black;
     color: red
 }
+
+
+/* Main Content*/
+
+#main-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding-left: 11.5%;
+}
+
+#intro-wrapper {
+    left: 50%;
+    top: 50%;
+    position: relative;
+    list-style: none;
+}
+
+#intro-wrapper h1 {
+    color: #FBC531;
+}
+
+#intro-wrapper p {
+    color: white;
+}
+
+#intro-wrapper li {
+    background: #1C2856;
+    max-width: 40%;
+    text-align: center;
+    border-right: 0.03px solid #707070;
+    border-top: 0.03px solid #707070;
+    border-bottom: 0.03px solid #707070;
+    border-left: 0.03px solid #707070;
+}
+
+#intro-wrapper li a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+#Signature {
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 0.1;
+    color: #FBC531;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #303640;
+}
+
+
+/* Show the Sidebar
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 10%;
+}
+
+#wrapper.toggled #main-content-wrapper {
+    padding-left: 11.5%;
+}
+ */
