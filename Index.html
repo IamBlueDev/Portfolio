@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Portfolio - Tanweer Baig</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Tanweer Baig</title>
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- Boot strap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Local CSS-->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!--SideBar-->
+        <div id="sidebar-wrapper">
+
+            <ul class="sidebar-nav">
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+
+
+        <!--Main Content-->
+        <div id="main-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lq-12">
+                        <a href="#" class="btn btn-success" id="menu-toggle">hm</a>
+                        <h1>Welcome</h1>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script to colapse menu -->
+    <script>
+        $('#menu-toggle').click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+
+</html>
