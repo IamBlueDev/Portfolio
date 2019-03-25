@@ -32,7 +32,7 @@
 
 #sidebar-bottombar {
     color: rgb(175, 146, 146);
-    opacity: 0.1;
+    opacity: 1;
     text-align: center;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: white;
@@ -53,7 +53,7 @@
 .header {
     background: #353b48;
     color: #FBC531;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 
@@ -132,6 +132,7 @@
     -moz-box-shadow: 0 2px 25px 0 rgb(0, 0, 0);
     box-shadow: 0 2px 0px 0 rgb(0, 0, 0);
     padding: 10px;
+    z-index: 1;
 }
 
 .sticky {
@@ -260,12 +261,49 @@
     font-size: 16px
 }
 
+.proj-sec {
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 8px 5px
+}
+
+.proj-sec .filters .type {
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 8px 5px
+}
+
+.proj-sec .item-inner .content {
+    padding: 15px
+}
+
+.proj-sec.item-inner .content .sub-title {
+    font-size: 14px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.proj-sec .item-inner .content .meta {
+    margin-bottom: 30px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.proj-sec .item-inner .content .action {
+    position: static;
+    font-size: 12px
+}
+
 
 /* UTILS */
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #363b48;
+    background: #363b48 url(../images/bg-pattern.jpg);
 }
 
 #breaker hr {
