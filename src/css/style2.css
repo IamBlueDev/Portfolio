@@ -1,0 +1,271 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.event:after, .event:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+body {
+  /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#2F3640), color-stop(#192A56), to(#353B48));
+  background-image: linear-gradient(to top left, #2F3640, #192A56, #353B48);
+}
+
+.topBar {
+  color: #f5f6fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.navBar {
+  /* padding: 100px; */
+  list-style: none;
+}
+
+.navBar li {
+  background: red;
+}
+
+.mainBox {
+  margin-top: 15%;
+  margin-left: 25%;
+  width: 50%;
+}
+
+/* Section : Main content */
+.inner {
+  -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0);
+  background: rgba(56, 255, 255, 0);
+  -webkit-box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 5%;
+  background-clip: padding-box;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 3%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: -1;
+  color: black;
+  margin-top: 10%;
+  overflow: hidden;
+}
+
+.LC {
+  width: 50%;
+  height: 200px;
+  background: rgba(56, 255, 255, 0);
+  float: left;
+  text-align: center;
+}
+
+.LC ul {
+  margin-top: 10px;
+  /* list-style: none; */
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.RC {
+  margin-left: 55%;
+  height: 200px;
+  background: rgba(56, 255, 255, 0);
+  text-align: center;
+  border-left: solid silver 1px;
+}
+
+.RC img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.mecontent {
+  height: 100%;
+}
+
+/* Content Section */
+.projsec {
+  height: 100%;
+}
+
+.projsec h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: -5%;
+}
+
+.projsec .item img {
+  /* border-radius: 50%; */
+  width: 150px;
+  margin-bottom: 10%;
+  -webkit-box-shadow: 0 2px 25px 0 black;
+  box-shadow: 1 2px 5px 0 black;
+}
+
+.projsec .item {
+  -ms-flex-line-pack: center;
+  align-content: center;
+  color: pink;
+  margin-bottom: 5%;
+}
+
+.item a {
+  color: white;
+}
+
+.projsec .footer {
+  background: white;
+  color: red;
+  width: 450vw;
+}
+
+/* Education section */
+.edusec {
+  overflow: hidden;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.edusec .inner {
+  height: inherit;
+}
+
+.edusec .innerCard {
+  display: inline-block;
+  width: 50%;
+  height: 750px;
+}
+
+.edusec .innerCard.right {
+  float: right;
+}
+
+.skillsec {
+  height: 100%;
+  overflow: hidden;
+}
+
+.skillsec h1 {
+  color: white;
+}
+
+.skillsec h1:before {
+  width: 3px;
+  height: 100%;
+  background: red;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+
+.skillsec .inner {
+  margin-top: 500px;
+}
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#timeline:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: red;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+.event {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.event .event-icon {
+  background: red;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+  border-radius: 50%;
+}
+
+.event .event-icon svg {
+  position: relative;
+  top: 14px;
+  left: 14px;
+}
+
+.event .event-content {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.event .event-content h2 {
+  padding: 15px;
+  background: red;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+  font-weight: 300;
+  border-radius: 3px 3px 0 0;
+}
+
+.event .event-content:before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid red;
+}
+
+.event .event-content.right {
+  float: right;
+}
+
+.event .event-content.right:before {
+  content: '';
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid red;
+}
+/*# sourceMappingURL=style2.css.map */
